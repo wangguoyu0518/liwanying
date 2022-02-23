@@ -31,6 +31,24 @@ body {
     z-index: 98;
 
 }
+/*---------------------- body_word -------------------------*/
+.body_word{
+    width: 520px;margin-top: 500px;display: none;
+    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;/* 字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s linear infinite;
+}
+.body_word p{text-align: center;font-family: Microsoft YaHei;line-height: 40px;font-size: 30px;}
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
 
 /*---------------------- body_left -------------------------*/
 

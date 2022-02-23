@@ -99,6 +99,7 @@ function Next() {
 function Rise() {
     //4.爱心升高，多出的那个小方块开始掉落
     console.log("开始升空");
+    document.getElementsByClassName("body_word")[0].style.display ='block'
     let timer2 = null,
         distance = 0;
     /* 升高时，移动的距离*/
@@ -114,7 +115,6 @@ function Rise() {
         // console.log(distance);
         if (distance >= target) {
             clearInterval(timer2);
-
             console.log("升空完毕");
 
         }
